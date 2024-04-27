@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(brain\ 1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    border-radius: 10px;
+    margin: 30px 30px 30px 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 1px, 0px, 0.2px;
+    padding-bottom: 20px;
+}
+
+
+.header {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    margin-left: 140px;
+    margin-top: 20px;
+}
+
+.game-beginning {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.time,
+.score {
+    background-color: #808080;
+    min-width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    background-color: #808080;
+    min-width: 70px;
+    height: 70px;
+    color: white;
+}
+
+.time {
+    margin-left: 76px;
+}
+
+.score {
+    margin-left: 124px;
+}
+
+.time span,
+.score span {
+    color: white;
+}
+
+.score {
+    height: 45px;
+    border-radius: 50%;
+}
+
+.game-beginning button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 50px;
+}
+
+.main-game {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.game-rule {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 250px;
+    height: 150px;
+}
+
+.game-rule h4 {
+    text-align: center;
+}
+
+.game-rule ul {
+    margin-left: 10px;
+    list-style: circle;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 20px;
+}
+
+.buttons button,
+.hint {
+    padding: 6px 30px;
+    border: none;
+}
+
+.hint {
+    background-color: white;
+    width: 130px;
+}
+
+.next-word {
+    cursor: pointer;
+}
+
+.alphabet-container {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    width: 232px;
+    height:220px;
+}
+
+.alphabet-container button:last-child {
+    transform: translateX(241%);
+}
+
+.alphabet-container button {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: aqua;
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+}
+
+/* box-shadow: 0 0 5px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.4), 0 0 15px rgba(255, 255, 255, 0.2); */
+
+.user-input-beginning {
+    width: 230px;
+    background-color: #808080;
+    border: none;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.user-input-game-time {
+    width: 30px;
+    height: 30px;
+    background-color: #808080;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.game-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opacity {
+    opacity: 0.1;
+}
+
+.normal {
+    opacity: 1;
+}
